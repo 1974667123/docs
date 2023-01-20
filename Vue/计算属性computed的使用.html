@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>4.Computed 和 Watch 的区别</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.a7193072.css" as="style"><link rel="preload" href="/docs/assets/js/app.7953ae55.js" as="script"><link rel="preload" href="/docs/assets/js/2.cc48e5f3.js" as="script"><link rel="preload" href="/docs/assets/js/26.d5861e32.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.7124343a.js"><link rel="prefetch" href="/docs/assets/js/11.2b1f1c8d.js"><link rel="prefetch" href="/docs/assets/js/12.36a1d4ce.js"><link rel="prefetch" href="/docs/assets/js/13.8094662f.js"><link rel="prefetch" href="/docs/assets/js/14.a8243a08.js"><link rel="prefetch" href="/docs/assets/js/15.9a254cb5.js"><link rel="prefetch" href="/docs/assets/js/16.5e94fb31.js"><link rel="prefetch" href="/docs/assets/js/17.e88afb83.js"><link rel="prefetch" href="/docs/assets/js/18.1a6d2a87.js"><link rel="prefetch" href="/docs/assets/js/19.7d27536e.js"><link rel="prefetch" href="/docs/assets/js/20.5dad1f13.js"><link rel="prefetch" href="/docs/assets/js/21.64de3233.js"><link rel="prefetch" href="/docs/assets/js/22.63a4444d.js"><link rel="prefetch" href="/docs/assets/js/23.ed3b4bf9.js"><link rel="prefetch" href="/docs/assets/js/24.043be685.js"><link rel="prefetch" href="/docs/assets/js/25.fc090377.js"><link rel="prefetch" href="/docs/assets/js/3.baf9f50e.js"><link rel="prefetch" href="/docs/assets/js/4.fa2ae311.js"><link rel="prefetch" href="/docs/assets/js/5.750695a1.js"><link rel="prefetch" href="/docs/assets/js/6.5bed6287.js"><link rel="prefetch" href="/docs/assets/js/7.f02b873d.js"><link rel="prefetch" href="/docs/assets/js/8.6434f399.js"><link rel="prefetch" href="/docs/assets/js/9.c64ff07e.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.a7193072.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/assets/imgs/hero.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docs/Vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/docs/Uniapp/" class="nav-link">
+  Uniapp
+</a></div><div class="nav-item"><a href="/docs/Css/" class="nav-link">
+  Css
+</a></div><div class="nav-item"><a href="/docs/JavasScript/" class="nav-link">
+  JavasScript
+</a></div><div class="nav-item"><a href="/docs/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/docs/Page/" class="nav-link">
+  Page
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docs/Vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/docs/Uniapp/" class="nav-link">
+  Uniapp
+</a></div><div class="nav-item"><a href="/docs/Css/" class="nav-link">
+  Css
+</a></div><div class="nav-item"><a href="/docs/JavasScript/" class="nav-link">
+  JavasScript
+</a></div><div class="nav-item"><a href="/docs/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/docs/Page/" class="nav-link">
+  Page
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs/Vue/" aria-current="page" class="sidebar-link">Vue开发笔记</a></li><li><a href="/docs/Vue/前端配置代理.html" class="sidebar-link">1.前端配置代理</a></li><li><a href="/docs/Vue/window.onresize调整窗口大小事件.html" class="sidebar-link">2.通过 JS 获取可视窗口的高度</a></li><li><a href="/docs/Vue/watch的使用.html" class="sidebar-link">3.watch 的使用</a></li><li><a href="/docs/Vue/计算属性computed的使用.html" class="active sidebar-link">4.Computed 和 Watch 的区别</a></li><li><a href="/docs/Vue/本地图片路径以变量形式引入不生效.html" class="sidebar-link">5.vue 项目中本地图片路径以变量形式引入不生效</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_4-computed-和-watch-的区别"><a href="#_4-computed-和-watch-的区别" class="header-anchor">#</a> 4.Computed 和 Watch 的区别</h1> <p>什么是 computed</p> <div class="language-js extra-class"><pre class="language-js"><code>
+
+ <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>doubleNum<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>aPlus<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span><span class="token comment">//aPlus.get</span>
+<span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>aPlus <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span><span class="token comment">//&lt;h1&gt;//aPlus.set</span>
+
+
+
+<span class="token comment">///////</span>
+<span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">num</span><span class="token operator">:</span> <span class="token number">152</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token literal-property property">components</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token literal-property property">computed</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">doubleNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>num <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">aPlus</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>num<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>mun <span class="token operator">=</span> v <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>1.computed 计算属性：
+作用：
+（1）解决模板中放入过多的逻辑会让模板过重且难以维护的问题。例如两个数据的拼接或字体颜色的判断。</p> <p>（2）它支持缓存，只有依赖的数据发生了变化，才会重新计算。例如模板中多次用到数据拼接可以用计算属性，只执行一次计算，除非数据发生变化。</p> <p>（3）不支持异步，如果有异步操作，无法监听数据的变化。</p> <p>（4）如果属性值是函数，默认使用 get 方法，函数的返回值就是属性的属性值。还有一个 set 方法，当数据变化时就会调用 set 方法。</p> <p>（5）computed 的值会默认走缓存，计算属性是基于它们的响应式依赖进行缓存的，也就是基于 data 声明过，或者父组件传递过来的 props 中的数据进行计算的。</p> <p>2.watch 侦听器：
+作用：
+（1）它不支持缓存，数据变化时，它就会触发相应的操作。</p> <p>（2）支持异步监听。</p> <p>（3）接受两个参数，第一个是最新的值，第二个是变化之前的值。</p> <p>（4）监听 data 或者 props 传来的数据，发生变化时会触发相应操作。有两个参数：</p> <div class="language- extra-class"><pre><code>    immediate：立即触发回调函数。
+
+    deep：深度监听，发现数据内部的变化，在复杂数据类型中使用，例如数组中的对象发生变化。需要注意的是，deep无法监听到数组和对象内部的变化。
+</code></pre></div><p>3.总结：
+（1）computed 计算属性 : 依赖其它属性值，并且 computed 的值有缓存，只有它依赖的属性值发生改变，下一次获取 computed 的值时才会重新计算 computed 的值。</p> <p>（2）watch 侦听器 : 更多的是观察的作用，无缓存性，类似于某些数据的监听回调，每当监听的数据变化时都会执行回调进行后续操作。</p> <p>4.computed 与 watch 的使用场景：
+computed：是多对一，多个数据影响一个。当需要进行数值计算,并且依赖于其它数据时，应该使用 computed，因为可以利用 computed 的缓存特性，避免每次获取值时都要重新计算。</p> <p>watch：是一对多，一个数据发生变化，执行相应操作会影响多个数据。当需要在数据变化时执行异步或开销较大的操作时，应该使用 watch，使用 watch 选项允许执行异步操作 ( 访问一个 API )，限制执行该操作的频率，并在得到最终结果前，设置中间状态。这些都是计算属性无法做到的。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/Vue/watch的使用.html" class="prev">
+        3.watch 的使用
+      </a></span> <span class="next"><a href="/docs/Vue/本地图片路径以变量形式引入不生效.html">
+        5.vue 项目中本地图片路径以变量形式引入不生效
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.7953ae55.js" defer></script><script src="/docs/assets/js/2.cc48e5f3.js" defer></script><script src="/docs/assets/js/26.d5861e32.js" defer></script>
+  </body>
+</html>

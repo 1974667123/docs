@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2.通过 JS 获取可视窗口的高度</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.a7193072.css" as="style"><link rel="preload" href="/docs/assets/js/app.7953ae55.js" as="script"><link rel="preload" href="/docs/assets/js/2.cc48e5f3.js" as="script"><link rel="preload" href="/docs/assets/js/23.ed3b4bf9.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.7124343a.js"><link rel="prefetch" href="/docs/assets/js/11.2b1f1c8d.js"><link rel="prefetch" href="/docs/assets/js/12.36a1d4ce.js"><link rel="prefetch" href="/docs/assets/js/13.8094662f.js"><link rel="prefetch" href="/docs/assets/js/14.a8243a08.js"><link rel="prefetch" href="/docs/assets/js/15.9a254cb5.js"><link rel="prefetch" href="/docs/assets/js/16.5e94fb31.js"><link rel="prefetch" href="/docs/assets/js/17.e88afb83.js"><link rel="prefetch" href="/docs/assets/js/18.1a6d2a87.js"><link rel="prefetch" href="/docs/assets/js/19.7d27536e.js"><link rel="prefetch" href="/docs/assets/js/20.5dad1f13.js"><link rel="prefetch" href="/docs/assets/js/21.64de3233.js"><link rel="prefetch" href="/docs/assets/js/22.63a4444d.js"><link rel="prefetch" href="/docs/assets/js/24.043be685.js"><link rel="prefetch" href="/docs/assets/js/25.fc090377.js"><link rel="prefetch" href="/docs/assets/js/26.d5861e32.js"><link rel="prefetch" href="/docs/assets/js/3.baf9f50e.js"><link rel="prefetch" href="/docs/assets/js/4.fa2ae311.js"><link rel="prefetch" href="/docs/assets/js/5.750695a1.js"><link rel="prefetch" href="/docs/assets/js/6.5bed6287.js"><link rel="prefetch" href="/docs/assets/js/7.f02b873d.js"><link rel="prefetch" href="/docs/assets/js/8.6434f399.js"><link rel="prefetch" href="/docs/assets/js/9.c64ff07e.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.a7193072.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/assets/imgs/hero.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docs/Vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/docs/Uniapp/" class="nav-link">
+  Uniapp
+</a></div><div class="nav-item"><a href="/docs/Css/" class="nav-link">
+  Css
+</a></div><div class="nav-item"><a href="/docs/JavasScript/" class="nav-link">
+  JavasScript
+</a></div><div class="nav-item"><a href="/docs/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/docs/Page/" class="nav-link">
+  Page
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docs/Vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/docs/Uniapp/" class="nav-link">
+  Uniapp
+</a></div><div class="nav-item"><a href="/docs/Css/" class="nav-link">
+  Css
+</a></div><div class="nav-item"><a href="/docs/JavasScript/" class="nav-link">
+  JavasScript
+</a></div><div class="nav-item"><a href="/docs/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/docs/Page/" class="nav-link">
+  Page
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs/Vue/" aria-current="page" class="sidebar-link">Vue开发笔记</a></li><li><a href="/docs/Vue/前端配置代理.html" class="sidebar-link">1.前端配置代理</a></li><li><a href="/docs/Vue/window.onresize调整窗口大小事件.html" class="active sidebar-link">2.通过 JS 获取可视窗口的高度</a></li><li><a href="/docs/Vue/watch的使用.html" class="sidebar-link">3.watch 的使用</a></li><li><a href="/docs/Vue/计算属性computed的使用.html" class="sidebar-link">4.Computed 和 Watch 的区别</a></li><li><a href="/docs/Vue/本地图片路径以变量形式引入不生效.html" class="sidebar-link">5.vue 项目中本地图片路径以变量形式引入不生效</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_2-通过-js-获取可视窗口的高度"><a href="#_2-通过-js-获取可视窗口的高度" class="header-anchor">#</a> 2.通过 JS 获取可视窗口的高度</h1> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$nextTick</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>tableHeight <span class="token operator">=</span> window<span class="token punctuation">.</span>innerHeright <span class="token operator">-</span> <span class="token number">235</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+window<span class="token punctuation">.</span><span class="token function-variable function">onresize</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$nextTick</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>tableHeight <span class="token operator">=</span> window<span class="token punctuation">.</span>innerHeright <span class="token operator">-</span> <span class="token number">235</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><img src="/docs/assets/notBookImgs/1.png" alt="mixureSecure"></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/Vue/前端配置代理.html" class="prev">
+        1.前端配置代理
+      </a></span> <span class="next"><a href="/docs/Vue/watch的使用.html">
+        3.watch 的使用
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.7953ae55.js" defer></script><script src="/docs/assets/js/2.cc48e5f3.js" defer></script><script src="/docs/assets/js/23.ed3b4bf9.js" defer></script>
+  </body>
+</html>
